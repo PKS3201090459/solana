@@ -1,0 +1,42 @@
+/* Переписываем стили кнопки */
+.wallet-adapter-button {
+  font-family: 'Press Start 2P', cursive !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  padding: 14px 28px !important;
+  border-radius: 14px !important;
+  border: none !important;
+
+  /* 🌊💖 Мику-градиент */
+  background: linear-gradient(90deg, #ffdd00, #ffdd00b3, #ffdd00) !important;
+  color: #000000 !important;
+  text-shadow: 0 0 6px #ffdd00b3, 0 0 12px #ffdd00b3;
+
+  /* ✨ Неон */
+  box-shadow: 0 0 15px #ffdd00b3,
+              0 0 30px #ffdd00b3 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Hover эффект */
+.wallet-adapter-button:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 25px rgba(255, 242, 0, 0.551),
+              0 0 50px rgba(105, 243, 255, 0.385) !important;
+}
+
+/* 🔥 Плавная пульсация */
+.wallet-adapter-button {
+  animation: miku-pulse 2s infinite alternate;
+}
+
+@keyframes miku-pulse {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6),
+                0 0 30px rgba(255, 105, 180, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1),
+                0 0 50px rgba(255, 105, 180, 0.9);
+  }
+}

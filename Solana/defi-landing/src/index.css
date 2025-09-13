@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌌 Фоновые секции */
+.bg-hero {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+}
+
+.bg-problem {
+  background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+}
+
+.bg-solution {
+  background: linear-gradient(180deg, #1a1a1a, #0f0f0f);
+}
+
+.bg-cta {
+  background: linear-gradient(90deg, #ffdd00, #e6c200);
+}
+
+/* 🔘 Кнопка с мягким статичным glow */
+.btn-glow {
+  @apply px-6 py-3 rounded-xl font-semibold text-lg transition duration-300 text-black;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(90deg, #ffdd00, #ffdd00);
+  box-shadow: 0 0 10px rgba(255, 221, 0, 0.5);
+}
+
+.btn-glow:hover {
+  background: linear-gradient(90deg, #ffd700, #ffdd00);
+  box-shadow: 0 0 15px rgba(255, 221, 0, 0.6);
+  transform: scale(1.05);
+}
+
+/* 📦 Карточки с мягким glow */
+.card {
+  @apply p-6 rounded-xl shadow-lg bg-gray-800 transition duration-300;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 221, 0, 0.4);
+}
+
+/* 🌟 Заголовки с мягким статичным неоновым свечением */
+.title-glow {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 
+    0 0 5px rgba(255, 221, 0, 0.4),
+    0 0 10px rgba(255, 221, 0, 0.3),
+    0 0 20px rgba(255, 221, 0, 0.2);
+}

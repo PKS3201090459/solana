@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌌 Ваши кастомные секции */
+.bg-hero {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+}
+
+.bg-problem {
+  background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+}
+
+.bg-solution {
+  background: linear-gradient(180deg, #1a1a1a, #0f0f0f);
+}
+
+.bg-cta {
+  background: linear-gradient(90deg, #ffdd00, #ffdd00);
+}
+
+/* 🎨 Кнопки с glow-эффектом */
+.btn-glow {
+  @apply px-6 py-3 rounded-xl font-semibold text-lg transition duration-300 text-white;
+  background: linear-gradient(90deg, #ffdd00, #ffdd00);
+  box-shadow: 0 0 15px rgba(255, 213, 0, 0.7);
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 25px rgb(255, 207, 50);
+  transform: scale(1.05);
+}
+
+/* ✨ Карточки */
+.card {
+  @apply p-6 rounded-xl shadow-lg bg-gray-800 transition duration-300;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 25px #ffdd00;
+}
+
+/* 🌟 Текстовые заголовки */
+.title-glow {
+  text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+}
+
+/* 🖱 Кастомный курсор на всю страницу */
+body {
+  cursor: url('/pizza-cursor.png') 16 16, auto; /* 16 16 — точка клика курсора */
+}

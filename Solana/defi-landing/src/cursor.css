@@ -1,0 +1,3 @@
+body {
+  cursor: url('/pizza-cursor.png') 16 16, auto; /* 16 16 — точка клика курсора */
+}
